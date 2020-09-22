@@ -1,0 +1,125 @@
+{% load static %}
+{% block content %}
+<ul class="navbar-nav flex-column">
+        <li class="nav-divider">
+            Menu
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link active" href="{% url 'home' %}" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+            <div id="submenu-1" class="collapse submenu" style="">
+                <ul class="nav flex-column">
+
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'dashboard1' %}">Dashboard1</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="">Dashboard2</a>#}
+{#                    </li>#}
+
+                </ul>
+            </div>
+        </li>
+    {% if user.is_staff %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'allstock' %}" ><i class="fa fa-fw fa-rocket"></i>Manage Stock</a>
+            <div id="submenu-2" class="collapse submenu" style="">
+
+            </div>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Assign Device</a>
+            <div id="submenu-4" class="collapse submenu" style="">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'available_stock' %}">Available Device To Assign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'all_item' %}">List Assigned Device</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Add User</a>
+            <div id="submenu-5" class="collapse submenu" style="">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users' %}">Add User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'address' %}">Manager Address</a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Report <span class="badge badge-secondary"></span></a>
+            <div id="submenu-7" class="collapse submenu" style="">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'gishamvu_report' %}">Gishamvu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'mbazi_report' %}">Mbazi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'ngoma_report' %}">Ngoma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'karama_report' %}">Karama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'huyedistrict_report' %}">Huye District Office</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'kinazi_report' %}">Kinazi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'mukura_report' %}">Mukura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'kigoma_report' %}">Kigoma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rusatira_report' %}">Rusatira</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tumba_report' %}">Tumba</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'ruhashya_report' %}">Ruhashya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'maraba_report' %}">Maraba</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'huye_report' %}">Huye</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rwaniro_report' %}">Rwaniro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'simbi_report' %}">Simbi</a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+
+        {% elif user.is_sectorIT %}
+
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'sector_report' %}" ><i class="fa fa-fw fa-rocket"></i>Report</a>
+            <div id="submenu-2" class="collapse submenu" style="">
+
+            </div>
+        </li>
+    {% endif %}
+
+    </ul>
+{% endblock %}

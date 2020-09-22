@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a90b7a0-2aae-49f8-a618-58f07afb604d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fs6bPp9koaw4jU3KuYgYISwOBy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projectn2/newrequest" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ingabire\Desktop\pythonT\stageproj3\static\media" />
+      <recent name="C:\Users\Ingabire\Desktop\pythonT\stageproj3\static\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="stageproj3" type="Python.DjangoServer" factoryName="Django server">
+      <module name="stageproj3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="stageproj3.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a90b7a0-2aae-49f8-a618-58f07afb604d" name="Default Changelist" comment="" />
+      <created>1596994523781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596994523781</updated>
+      <workItem from="1596994525281" duration="657000" />
+      <workItem from="1596995231162" duration="32000" />
+      <workItem from="1596995395563" duration="23000" />
+      <workItem from="1596995724363" duration="6799000" />
+      <workItem from="1597039897441" duration="6587000" />
+      <workItem from="1597125274623" duration="8600000" />
+      <workItem from="1597225224494" duration="7921000" />
+      <workItem from="1597397550417" duration="1536000" />
+      <workItem from="1597414226311" duration="3829000" />
+      <workItem from="1597479662340" duration="25837000" />
+      <workItem from="1597659750098" duration="21483000" />
+      <workItem from="1597690657978" duration="4195000" />
+      <workItem from="1597732660803" duration="27329000" />
+      <workItem from="1597829252729" duration="806000" />
+      <workItem from="1597831702855" duration="12557000" />
+      <workItem from="1597905623100" duration="1225000" />
+      <workItem from="1598471664429" duration="431000" />
+      <workItem from="1598516350440" duration="616000" />
+      <workItem from="1598811691938" duration="688000" />
+      <workItem from="1598846368853" duration="816000" />
+      <workItem from="1598896233904" duration="979000" />
+      <workItem from="1598955009970" duration="593000" />
+      <workItem from="1598978196440" duration="696000" />
+      <workItem from="1599289040150" duration="1047000" />
+      <workItem from="1600786084489" duration="1088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596994915629">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="508" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1596994915629" />
+    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597739828852">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1597739828852" />
+    <state x="964" y="186" key="FileChooserDialogImpl" timestamp="1598978264066">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="964" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1598978264066" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1600787185754">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1600787185754">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1600787185754">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1600787185754">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
+    <state x="602" y="73" key="SettingsEditor" timestamp="1596994720160">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="602" y="73" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1596994720160" />
+    <state x="92" y="92" width="1416" height="676" key="dock-window-1" timestamp="1597666888280">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="dock-window-1/0.0.1600.860@0.0.1600.860" timestamp="1597666888280" />
+  </component>
+</project>

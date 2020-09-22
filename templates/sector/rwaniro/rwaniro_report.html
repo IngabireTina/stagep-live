@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="app-title">
+        <div>
+          <h1><i class="fa fa-th-list"></i>Huye District</h1>
+          <p>All Item Given in Rwaniro Sector</p>
+        </div>
+    </div>
+    <hr>
+
+    <form action="">
+    <div class="row">
+
+        <div class="col-sm-3">{{ rFilter.form.person|as_crispy_field }}</div>
+        <div class="col-sm-3">{{ rFilter.form.device|as_crispy_field }}</div>
+        <button class="btn btn-sm bg-info" style="height: 28px; margin-top: 30px">search</button>
+    </div>
+    </form>
+    <hr>
+<div class="table-responsive">
+     <table class="table">
+         <thead class="bg-light">
+         <tr class="border-0">
+             <th class="border-0">#</th>
+             <th class="border-0">Device</th>
+             <th class="border-0">Device Name</th>
+             <th class="border-0">Status</th>
+             <th class="border-0">Description</th>
+             <th class="border-0">Person</th>
+             <th class="border-0">Title</th>
+             <th class="border-0">Address</th>
+
+         </tr>
+         </thead>
+         <tbody>
+         {% for form in data %}
+             <tr>
+                 <td>{{ form.id }}</td>
+                 <td>{{ form.device }}</td>
+                 <td>{{ form.device.name }}</td>
+                 <td>{{ form.status }}</td>
+                 <td>{{ form.description }}</td>
+                 <td>{{ form.person }}</td>
+                 <td>{{ form.title }}</td>
+                 <td>{{ form.address }}</td>
+
+
+            </tr>
+         {% endfor %}
+
+        </tbody>
+     </table>
+ </div>
+{#</div>#}
+{% endblock %}

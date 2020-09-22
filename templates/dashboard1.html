@@ -1,0 +1,292 @@
+{% extends 'index.html' %}
+{% load mathfilters %}
+{% block content %}
+
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">HUYE DISTRICT ICT MATERIAL </h2>
+                                <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard1</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">The Materials Given to staff</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="ecommerce-widget">
+
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted"> Compter Laptops Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1" >{{ laptop_given }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    #id="sparkline-revenue"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Desktop Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ desktop_given }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue2"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Printers Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ printer_given }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-primary font-weight-bold">#}
+{#                                            <span>N/A</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue3"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">4G routers Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{routers_given}}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">#}
+{#                                            <span>-2.00%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Scanners Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{scanners_given}}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">#}
+{#                                            <span>-2.00%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Television Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{television_given}}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">#}
+{#                                            <span>-2.00%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Decoder Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{decoder_given}}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">#}
+{#                                            <span>-2.00%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Total device Given</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{total_device}}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">#}
+{#                                            <span>-2.00%</span>#}
+{#                                        </div>#}
+                                    </div>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ============================================================== -->
+
+                            <!-- ============================================================== -->
+
+                                          <!-- recent orders  -->
+                            <!-- ============================================================== -->
+                            <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">The advice provided to staff</h5>
+                                    <div class="card-body p-0">
+                                          <div class="table-responsive">
+     <table class="table">
+         <thead class="bg-light">
+         <tr class="border-0">
+             <th class="border-0">#</th>
+             <th class="border-0">Device</th>
+             <th class="border-0">Status</th>
+             <th class="border-0">Description</th>
+             <th class="border-0">Date</th>
+             <th class="border-0">Person</th>
+             <th class="border-0">Title</th>
+             <th>Update</th>
+             <th>Remove</th>
+         </tr>
+         </thead>
+         <tbody>
+         {% for form in items %}
+             <tr>
+                 <td>{{ form.id }}</td>
+                 <td>{{ form.device }}</td>
+                 <td>{{ form.status }}</td>
+                 <td>{{ form.description }}</td>
+                 <td>{{ form.date_created }}</td>
+                 <td>{{ form.person }}</td>
+                 <td>{{ form.title }}</td>
+                 <td><a class="btn btn-sm btn-info" href="{% url 'updateitem'  form.id %}">Update</a></td>
+                 <td><a class="btn btn-sm btn-warning" href="{% url 'deleteitem' form.id %}">Remove</a></td>
+
+            </tr>
+         {% endfor %}
+
+        </tbody>
+     </table>
+ </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end recent orders  -->
+
+
+
+                        </div>
+
+                        </div>
+
+                        <div class="row">
+                            <!-- ============================================================== -->
+                            <!-- sales  -->
+                            <!-- ============================================================== -->
+{#                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">#}
+{#                                <div class="card border-3 border-top border-top-primary">#}
+{#                                    <div class="card-body">#}
+{#                                        <h5 class="text-muted">Scanner</h5>#}
+{#                                        <div class="metric-value d-inline-block">#}
+{#                                            <h1 class="mb-1">{{ scanners_given }}</h1>#}
+{#                                        </div>#}
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+                            <!-- ============================================================== -->
+                            <!-- end sales  -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- new customer  -->
+                            <!-- ============================================================== -->
+{#                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">#}
+{#                                <div class="card border-3 border-top border-top-primary">#}
+{#                                    <div class="card-body">#}
+{#                                        <h5 class="text-muted">Television Given</h5>#}
+{#                                        <div class="metric-value d-inline-block">#}
+{#                                            <h1 class="mb-1">{{television_given}}</h1>#}
+{#                                        </div>#}
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+                            <!-- ============================================================== -->
+                            <!-- end new customer  -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- visitor  -->
+{#                            <!-- ============================================================== -->#}
+{#                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">#}
+{#                                <div class="card border-3 border-top border-top-primary">#}
+{#                                    <div class="card-body">#}
+{#                                        <h5 class="text-muted">Decoder Given</h5>#}
+{#                                        <div class="metric-value d-inline-block">#}
+{#                                            <h1 class="mb-1">{{decorder_given}}</h1>#}
+{#                                        </div>#}
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+                            <!-- ============================================================== -->
+                            <!-- end visitor  -->
+                            <!-- ============================================================== -->
+                            <!-- ============================================================== -->
+                            <!-- total orders  -->
+                            <!-- ============================================================== -->
+{#                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">#}
+{#                                <div class="card border-3 border-top border-top-primary">#}
+{#                                    <div class="card-body">#}
+{#                                        <h5 class="text-muted">Total Materials Given</h5>#}
+{#                                        <div class="metric-value d-inline-block">#}
+{#                                            <h1 class="mb-1">{{total_device}}</h1>#}
+{#                                        </div>#}
+{#                                        <div class="metric-label d-inline-block float-right text-danger font-weight-bold">#}
+{#                                            <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+                            <!-- ============================================================== -->
+                            <!-- end total orders  -->
+                            <!-- ============================================================== -->
+                        </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+    <div class="app-title">
+        <div>
+          <h1><i class="fa fa-th-list"></i>Huye District</h1>
+          <p>Assign Device to Staff</p>
+        </div>
+    </div>
+    <hr>
+
+<h1 class="text-center">Update Address</h1>
+    <hr>
+    <div>
+    <form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+   <input type="submit" name="submit">
+    </form>
+    </div>
+
+
+{% endblock %}

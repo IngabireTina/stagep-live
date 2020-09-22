@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="app-title">
+        <div>
+          <h1><i class="fa fa-th-list"></i>Huye District</h1>
+          <p>Record a Device to Stock</p>
+        </div>
+</div>
+    <hr>
+{# <div class="table-responsive">#}
+{# <form action="" method="post">#}
+{#     {% csrf_token %}#}
+{#     {% for field in form %}#}
+{#         {{ field.label }}#}
+{#         {{ field  }}#}
+{#     {% endfor %}#}
+{#     {{ form.as_p }}#}
+{#     <input type="submit" name="submit">#}
+{##}
+{# </form>#}
+{##}
+{# </div>#}
+    <div class="overdue container mb-5">
+     {% for message in messages %}
+        <div class="alert alert-success alert-dismissible fade show text-center bg-success" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-4">{{ form.name|as_crispy_field }}</div>
+                    <div class="col-lg-4">{{ form.serialNumber|as_crispy_field }}</div>
+{#                    <div class="col-lg-4">{{ form.date_created|as_crispy_field }}</div>#}
+                    <div class="col-lg-4">{{ form.code|as_crispy_field }}</div>
+                    <div class="col-lg-4">{{ form.category|as_crispy_field }}</div>
+                    <div class="col-lg-4">{{ form.availability|as_crispy_field }}</div>
+
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-md btn-success-100 ">Save</button>
+                <button class="btn btn-md btn-success-100 "><a href="{% url 'home' %}">Back</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+{#</div>#}
+{% endblock %}

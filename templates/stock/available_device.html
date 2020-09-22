@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="app-title">
+        <div>
+          <h1><i class="fa fa-th-list"></i>Huye District</h1>
+          <p>Available Stock To Be Assigned</p>
+        </div>
+    </div>
+    <hr>
+
+    <form action="" method="get">
+    <div class="row">
+        <div class="col-sm-3">{{ sFilter.form.code|as_crispy_field }}</div>
+        <div class="col-sm-3">{{ sFilter.form.name|as_crispy_field }}</div>
+        <button class="btn btn-sm bg-info" style="height: 28px; margin-top: 30px">search</button>
+    </div>
+    </form>
+ <div class="table-responsive">
+     <table class="table">
+         <thead class="bg-light">
+         <tr class="border-0">
+             <th class="border-0">ID</th>
+             <th class="border-0">Device Name</th>
+             <th class="border-0">Serial Number</th>
+             <th class="border-0">Date Created</th>
+             <th class="border-0">Code</th>
+             <th class="border-0">Status</th>
+             <th class="border-0">Category</th>
+             <th>Give</th>
+
+         </tr>
+         </thead>
+         <tbody>
+         {% for stock in stocks %}
+             <tr>
+                 <td>{{ stock.id }}</td>
+                 <td>{{ stock.name }}</td>
+                 <td>{{ stock.serialNumber }}</td>
+                 <td>{{ stock.date_created }}</td>
+                 <td>{{ stock.code }}</td>
+                 <td>{{ stock.availability }}</td>
+                 <td>{{ stock.category }}</td>
+                 <td><a class="btn btn-sm btn-info" href="{% url 'recorditem'  stock.id %}">Give</a></td>
+
+            </tr>
+         {% endfor %}
+
+        </tbody>
+     </table>
+
+ </div>
+
+
+
+{#</div>#}
+{% endblock %}
