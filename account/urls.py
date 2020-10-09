@@ -8,6 +8,8 @@ urlpatterns = [
     path('', views.homePage, name='homePage'),
     path('home', Dashboard.as_view(), name='home'),
     path('profile/', views.userProfile, name='profile'),
+    path('profiling/', views.user_profiling, name='profiling'),
+    path('change-password/', views.change_password, name='change_password'),
 
     # path('dashboard1/', views.profile, name='dashboard1'),
     # path('dashboard2/', views.finance, name='dashboard2'),
@@ -23,7 +25,8 @@ urlpatterns = [
     path('delete_address/<str:pk>/', views.deleteAddress, name='delete_address'),
 
     path('dashboard1/', Dashboard1.as_view(), name='dashboard1'),
-    path('dashboard2/', views.dashboard2, name='dashboard2'),
+    # path('dashboard2/', views.dashboard2, name='dashboard2'),
+    path('dashboard2/', Dashboard2.as_view(), name='dashboard2'),
 
 
 ]

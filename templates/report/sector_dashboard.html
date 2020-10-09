@@ -1,0 +1,158 @@
+{% load mathfilters %}
+<div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <div class="app-title">
+        <div>
+          <h1><i class="fa fa-th-list"></i>Huye District</h1>
+
+        </div>
+    </div>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">IT Sector Management</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="ecommerce-widget">
+
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <a href="{% url 'sector_laptop' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted"> Compter Laptops</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1" >{{ sector_laptops }}</h1>
+                                        </div>
+                                    </div>
+                                    </a>
+{#                                    #id="sparkline-revenue"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                     <a href="{% url 'sector_desktop' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted"> Computer Desktop</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_Desktop }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span>Given {{ desktop_given }}</span>#}
+{#                                        </div>#}
+                                    </div>
+                                     </a>
+{#                                    id="sparkline-revenue2"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                     <a href="{% url 'sector_printer' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Printers</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_printer }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span>Given {{printer_given}}</span>#}
+{#                                        </div>#}
+                                    </div>
+                                     </a>
+{#                                    id="sparkline-revenue3"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <a href="{% url 'sector_router' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">4G routers</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_routers }}</h1>
+                                        </div>
+{#                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">#}
+{#                                            <span>Given {{routers_given}}</span>#}
+{#                                        </div>#}
+                                    </div>
+                                    </a>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                     <a href="{% url 'sector_scanner' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Scanners in stock</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_scanner }}</h1>
+                                        </div>
+
+                                    </div>
+                                     </a>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                     <a href="{% url 'sector_television' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Television in stock</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_television }}</h1>
+                                        </div>
+                                    </div>
+                                     </a>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <a href="{% url 'sector_decoder' %}">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Decoder in Stock</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ sector_decoder }}</h1>
+                                        </div>
+
+                                    </div>
+                                    </a>
+{#                                    id="sparkline-revenue4"#}
+                                    <div ></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted"> Devices in {{ request.user.address }}</h5>
+                                        <hr>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">{{ device_given_sector }}</h1>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>

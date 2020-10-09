@@ -6,6 +6,15 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+messages = "*"
+django = "*"
+django-crispy-forms = "*"
+django-filter = "*"
+django-mathfilters = "*"
+pillow = "*"
+gunicorn = "*"
+whitenoise = "*"
+postgres = "*"
 
 [requires]
 python_version = "3.7"

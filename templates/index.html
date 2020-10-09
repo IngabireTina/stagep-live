@@ -46,8 +46,11 @@
                                     <h5 class="mb-0 text-white nav-user-name">{{ request.user }} </h5>
                                     <span class="status"></span><span class="ml-2">Available</span>
                                 </div>
-                                <a class="dropdown-item" href="{% url 'profile' %}"><i class="fas fa-user mr-2"></i>{{ request.user }}</a>
-                                <a class="dropdown-item" href="{% url 'profile' %}"><i class="fas fa-cog mr-2"></i>Setting</a>
+
+                                <a class="dropdown-item" href="{% url 'profiling' %}"><i class="fas fa-user mr-2"></i>{{ request.user }}</a>
+                                <a class="dropdown-item" href="{% url 'change_password' %}"><i class="fa fa-key fa-lg"></i>Change Password</a>
+{#                                <a class="dropdown-item" href="{% url 'change_password' %}"><i class="fas fa-cog mr-2"></i>Change Password</a>#}
+{#                                <a class="dropdown-item" href="{% url 'profile' %}"><i class="fas fa-cog mr-2"></i>Setting</a>#}
                                 <a class="dropdown-item" href="{% url 'logout' %}"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -96,13 +99,13 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2020 CIng. All rights reserved. Dashboard by <a href="https://huye.gov.rw/index.php?id=39">CIng</a>.
+                             Copyright © 2020. All rights reserved. Huye District <a href="https://huye.gov.rw/index.php?id=39">IT Manager</a>.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="https://huye.gov.rw/index.php?id=39">About</a>
+{#                                <a href="https://huye.gov.rw/index.php?id=39">About</a>#}
 {#                                <a href="javascript: void(0);">Support</a>#}
-                                <a href=https://huye.gov.rw/index.php?id=39">Contact Us</a>
+{#                                <a href=https://huye.gov.rw/index.php?id=39">Contact Us</a>#}
                             </div>
                         </div>
                     </div>

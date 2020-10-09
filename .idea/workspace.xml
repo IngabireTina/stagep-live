@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a90b7a0-2aae-49f8-a618-58f07afb604d" name="Default Changelist" comment="" />
+    <list default="true" id="6a90b7a0-2aae-49f8-a618-58f07afb604d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stageproj3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stageproj3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registerItem/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/registerItem/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registerItem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registerItem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registerItem/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registerItem/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stageproj3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stageproj3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sector_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sector_report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,28 +58,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="455ba3b3-55bf-416c-bf81-593d50b1e1a9" />
   <component name="ProjectId" id="1fs6bPp9koaw4jU3KuYgYISwOBy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projectn2/newrequest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/templates/report" />
       <recent name="C:\Users\Ingabire\Desktop\pythonT\stageproj3\static\media" />
       <recent name="C:\Users\Ingabire\Desktop\pythonT\stageproj3\static\assets\images" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="stageproj3" type="Python.DjangoServer" factoryName="Django server">
+  <component name="RunManager" selected="Django Server.stageproj2">
+    <configuration name="stageproj2" type="Python.DjangoServer" factoryName="Django server" singleton="false">
       <module name="stageproj3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,7 +90,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="stageproj3.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/Stage3working-9jcGDXqO/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -66,19 +106,36 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stageproj3" type="Python.DjangoServer" factoryName="Django server">
+      <module name="stageproj3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="stageproj3.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/Stage3working-9jcGDXqO/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.stageproj3" />
+      <item itemvalue="Django Server.stageproj2" />
+    </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -114,41 +171,64 @@
       <workItem from="1598978196440" duration="696000" />
       <workItem from="1599289040150" duration="1047000" />
       <workItem from="1600786084489" duration="1088000" />
+      <workItem from="1601453489127" duration="9724000" />
+      <workItem from="1601502011504" duration="20723000" />
+      <workItem from="1601657122197" duration="3880000" />
+      <workItem from="1601739109458" duration="1209000" />
+      <workItem from="1602240162072" duration="976000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596994915629">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="516" y="114" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601453786865">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="508" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1596994915629" />
+    <state x="516" y="114" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873@67.27.1533.873" timestamp="1601453786865" />
     <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597739828852">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1597739828852" />
-    <state x="964" y="186" key="FileChooserDialogImpl" timestamp="1598978264066">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="991" y="216" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601530536745">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="964" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1598978264066" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1600787185754">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="991" y="216" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1601530536745" />
+    <state width="1487" height="125" key="GridCell.Tab.0.bottom" timestamp="1601674311941">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1600787185754">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1487" height="125" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1601674311941" />
+    <state width="1487" height="125" key="GridCell.Tab.0.center" timestamp="1601674311941">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1600787185754">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1487" height="125" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1601674311941" />
+    <state width="1487" height="125" key="GridCell.Tab.0.left" timestamp="1601674311940">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1600787185754">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1487" height="125" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1601674311940" />
+    <state width="1487" height="125" key="GridCell.Tab.0.right" timestamp="1601674311941">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1600787185754" />
+    <state width="1487" height="125" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1601674311941" />
     <state x="602" y="73" key="SettingsEditor" timestamp="1596994720160">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

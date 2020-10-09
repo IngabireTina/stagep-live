@@ -1,0 +1,90 @@
+{% extends 'index.html' %}
+{% load static %}
+<style>
+    .btn {
+    background-color: dimgray!important;
+    color: white;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block content %}
+
+    <div class="card">
+        <div class="card-body text-center">
+         <h5 class="text-info tx-uppercase">Ruhashya Sector Report</h5>
+        </div>
+    </div>
+<hr>
+       <div class="br-pagebody">
+              <div class="br-section-wrapper">
+                   <div id="buttons"></div>
+                   <table id="datatable" class="table table-responsive-sm">
+                       <thead class="bg-light">
+                          <tr>
+
+                            <th>Device</th>
+                            <th>Device Name</th>
+                            <th>Device code</th>
+                            <th>Status</th>
+                            <th>Description</th>
+                            <th>Person</th>
+                            <th>Title</th>
+                            <th>Address</th>
+
+
+                          </tr>
+                       </thead>
+                       <tbody>
+                        {% for pro in data %}
+                          <tr>
+
+                            <td>{{ pro.device }}</td>
+                            <td>{{ pro.device.name}}</td>
+                            <td>{{ pro.device.code}}</td>
+                            <td>{{ pro.status }}</td>
+                            <td>{{ pro.description }}</td>
+                            <td>{{ pro.person }}</td>
+                            <td>{{ pro.title }}</td>
+                            <td>{{ pro.address }}</td>
+
+                          </tr>
+                        {% endfor %}
+                        </tbody>
+                   </table>
+             </div>
+       </div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="{% static 'js/http_code.jquery.com_jquery-3.3.1.js' %}"></script>
+  <script src="{% static 'js/http_cdn.datatables.net_1.10.19_js_jquery.dataTables.js' %}"></script>
+  <script src="{% static 'js/http_cdn.datatables.net_buttons_1.6.1_js_dataTables.buttons.js' %}"></script>
+  <script src="{% static 'js/http_cdnjs.cloudflare.com_ajax_libs_jszip_3.1.3_jszip.js' %}"></script>
+  <script src="{% static 'js/http_cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.53_pdfmake.js' %}"></script>
+  <script src="{% static 'js/http_cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.36_vfs_fonts.js' %}"></script>
+  <script src="{% static 'js/http_cdn.datatables.net_buttons_1.6.1_js_buttons.html5.js' %}"></script>
+  <script src="{% static 'js/http_cdn.datatables.net_buttons_1.6.1_js_buttons.bootstrap4.js' %}"></script>
+
+  <script>
+         $('#datatable').dataTable({
+             lengthChange: false,
+            dom: "Bfrtip",
+            buttons: [
+                {
+                    extend: 'excelHtml5',
+                    title: 'Ruhashya Sector Report',
+                    text:'excel'
+                },
+                {
+                    extend: 'pdfHtml5',
+                    title: 'Ruhashya Sector Report',
+                    text: 'PDF',
+                    orientation: 'landscape',
+                    pageSize: 'LEGAL'
+
+                }
+             ],
+        });
+
+</script>
+{% endblock  %}

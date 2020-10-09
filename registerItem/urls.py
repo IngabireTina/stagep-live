@@ -15,7 +15,6 @@ urlpatterns = [
     path('allstock/', views.allStock, name='allstock'),
     path('available_stock/', views.availableDevice, name='available_stock'),
 
-
     path('sector-laptop', views.sectorLaptop, name='sector_laptop'),
     path('sector_update_lap/<int:pk>', views.sectorLaptopUpdate, name='sector_update_lap'),
 
@@ -37,8 +36,6 @@ urlpatterns = [
     path('sector_decoder', views.sectorDecoder, name='sector_decoder'),
     path('sector_update_decoder/<int:pk>', views.sectorDecoderUpdate, name='sector_update_decoder'),
 
-
-
     path('gishamvu-report/', views.gishamvuReport, name='gishamvu_report'),
     path('huye-report/', views.huyeReport, name='huye_report'),
     path('karama-report/', views.karamaReport, name='karama_report'),
@@ -55,10 +52,23 @@ urlpatterns = [
     path('tumba-report/', views.tumbaReport, name='tumba_report'),
     path('huyedistrict-report/', views.districtOfficeReport, name='huyedistrict_report'),
 
-
-
-
     path('sector_report/', views.tableReport, name='sector_report'),
+
+    # =======================generate report ================
+    path('karama-generate/', views.karamaReportGenerate, name='karama_generate'),
+    path('huye-generate/', views.huyeReportGenerate, name='huye_generate'),
+    path('huyedistrict-generate/', views.districtReportGenerate, name='huyedistrict_generate'),
+    path('kigoma-generate/', views.kigomaReportGenerate, name='kigoma_generate'),
+    path('kinazi-generate/', views.kinaziReportGenerate, name='kinazi_generate'),
+    path('maraba-generate/', views.marabaReportGenerate, name='maraba_generate'),
+    path('mbazi-generate/', views.mbaziReportGenerate, name='mbazi_generate'),
+    path('mukura-generate/', views.mukuraReportGenerate, name='mukura_generate'),
+    path('ngoma-generate/', views.ngomaReportGenerate, name='ngoma_generate'),
+    path('ruhashya-generate/', views.ruhashyaReportGenerate, name='ruhashya_generate'),
+    path('rusatira-generate/', views.rusatiraReportGenerate, name='rusatira_generate'),
+    path('rwaniro-generate/', views.rwaniroReportGenerate, name='rwaniro_generate'),
+    path('simbi-generate/', views.simbiReportGenerate, name='simbi_generate'),
+    path('tumba-generate/', views.tumbaReportGenerate, name='tumba_generate'),
 
 
 ]

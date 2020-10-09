@@ -277,7 +277,7 @@ def gishamvuReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/gishamvu_report.html', context)
+    return render(request, 'report/gishamvu_report.html', context)
 
 
 def huyeReport(request):
@@ -286,7 +286,7 @@ def huyeReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/huye/huye_report.html', context)
+    return render(request, 'report/huye/huye_report.html', context)
 
 
 def karamaReport(request):
@@ -295,8 +295,17 @@ def karamaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/karama/karama_report.html', context)
+    return render(request, 'report/karamaR/karama_report.html', context)
 
+
+# def kReport(request):
+#     data = Item.objects.filter(address__name='Karama')
+#     rFilter = SectorReportFilter(request.GET, queryset=data)
+#     data = rFilter.qs
+#
+#     context = {'data': data, 'rFilter': rFilter}
+#     return render(request, 's', context)
+#
 
 def kigomaReport(request):
     data = Item.objects.filter(address__name='Kigoma')
@@ -304,7 +313,7 @@ def kigomaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/kigoma/kigoma_report.html', context)
+    return render(request, 'report/kigoma/kigoma_report.html', context)
 
 
 def kinaziReport(request):
@@ -313,7 +322,7 @@ def kinaziReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/kinazi/kinazi_report.html', context)
+    return render(request, 'report/kinazi/kinazi_report.html', context)
 
 
 def marabaReport(request):
@@ -322,7 +331,7 @@ def marabaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/maraba/maraba_report.html', context)
+    return render(request, 'report/maraba/maraba_report.html', context)
 
 
 def mbaziReport(request):
@@ -331,7 +340,7 @@ def mbaziReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/mbazi/mbazi_report.html', context)
+    return render(request, 'report/mbazi/mbazi_report.html', context)
 
 
 def mukuraReport(request):
@@ -340,7 +349,7 @@ def mukuraReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/mukura/mukura_report.html', context)
+    return render(request, 'report/mukura/mukura_report.html', context)
 
 
 def ngomaReport(request):
@@ -349,7 +358,7 @@ def ngomaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/ngoma/ngoma_report.html', context)
+    return render(request, 'report/ngoma/ngoma_report.html', context)
 
 
 def ruhashyaReport(request):
@@ -358,7 +367,7 @@ def ruhashyaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/ruhashya/ruhashya_report.html', context)
+    return render(request, 'report/ruhashya/ruhashya_report.html', context)
 
 
 def rusatiraReport(request):
@@ -367,7 +376,7 @@ def rusatiraReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/rusatira/rusatira.html', context)
+    return render(request, 'report/rusatira/rusatira.html', context)
 
 
 def rwaniroReport(request):
@@ -376,7 +385,7 @@ def rwaniroReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/rwaniro/rwaniro_report.html', context)
+    return render(request, 'report/rwaniro/rwaniro_report.html', context)
 
 
 def simbiReport(request):
@@ -385,7 +394,7 @@ def simbiReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/simbi/simbi_report.html', context)
+    return render(request, 'report/simbi/simbi_report.html', context)
 
 
 def tumbaReport(request):
@@ -394,7 +403,7 @@ def tumbaReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/tumba/tumba_report.html', context)
+    return render(request, 'report/tumba/tumba_report.html', context)
 
 
 def districtOfficeReport(request):
@@ -403,7 +412,7 @@ def districtOfficeReport(request):
     data = rFilter.qs
 
     context = {'data': data, 'rFilter': rFilter}
-    return render(request, 'sector/huyedistrict/huyedistrictofficereport.html', context)
+    return render(request, 'report/huyedistrict/huyedistrictofficereport.html', context)
 
 
 # Report Tables for Sector #########################
@@ -415,3 +424,89 @@ def tableReport(request):
 
     context = {'data': data, 'rFilter': rFilter}
     return render(request, 'sector_report.html', context)
+
+
+# ================generate report in excel and pdf ==========================
+
+def karamaReportGenerate(request):
+    data = Item.objects.filter(address__name='Karama')
+    context = {'data': data}
+    return render(request, 'repportGenerate/karama_generate.html', context)
+
+
+def huyeReportGenerate(request):
+    data = Item.objects.filter(address__name='Huye')
+    context = {'data': data}
+    return render(request, 'repportGenerate/huye_generate.html', context)
+
+
+def districtReportGenerate(request):
+    data = Item.objects.filter(address__name='Huye District Office')
+    context = {'data': data}
+    return render(request, 'repportGenerate/huyedistrict_generate.html', context)
+
+
+def kigomaReportGenerate(request):
+    data = Item.objects.filter(address__name='Kigoma')
+    context = {'data': data}
+    return render(request, 'repportGenerate/kigoma_generate.html', context)
+
+
+def kinaziReportGenerate(request):
+    data = Item.objects.filter(address__name='Kinazi')
+    context = {'data': data}
+    return render(request, 'repportGenerate/kinazi_generate.html', context)
+
+
+def marabaReportGenerate(request):
+    data = Item.objects.filter(address__name='Maraba')
+    context = {'data': data}
+    return render(request, 'repportGenerate/maraba_generate.html', context)
+
+
+def mbaziReportGenerate(request):
+    data = Item.objects.filter(address__name='Mbazi')
+    context = {'data': data}
+    return render(request, 'repportGenerate/mbazi_generate.html', context)
+
+
+def mukuraReportGenerate(request):
+    data = Item.objects.filter(address__name='Mukura')
+    context = {'data': data}
+    return render(request, 'repportGenerate/mukura_generate.html', context)
+
+
+def ngomaReportGenerate(request):
+    data = Item.objects.filter(address__name='Ngoma')
+    context = {'data': data}
+    return render(request, 'repportGenerate/ngoma_generate.html', context)
+
+
+def ruhashyaReportGenerate(request):
+    data = Item.objects.filter(address__name='Ruhashya')
+    context = {'data': data}
+    return render(request, 'repportGenerate/ruhashya_generate.html', context)
+
+
+def rusatiraReportGenerate(request):
+    data = Item.objects.filter(address__name='Rusatira')
+    context = {'data': data}
+    return render(request, 'repportGenerate/rusatira_generate.html', context)
+
+
+def rwaniroReportGenerate(request):
+    data = Item.objects.filter(address__name='Rwaniro')
+    context = {'data': data}
+    return render(request, 'repportGenerate/rwaniro_generate.html', context)
+
+
+def simbiReportGenerate(request):
+    data = Item.objects.filter(address__name='Simbi')
+    context = {'data': data}
+    return render(request, 'repportGenerate/simbi_generate.html', context)
+
+
+def tumbaReportGenerate(request):
+    data = Item.objects.filter(address__name='Tumba')
+    context = {'data': data}
+    return render(request, 'repportGenerate/tumba_generate.html', context)

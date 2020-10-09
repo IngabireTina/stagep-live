@@ -17,7 +17,7 @@ class ItemFilter(django_filters.FilterSet):
 class SectorReportFilter(django_filters.FilterSet):
     class Meta:
         model = Item
-        fields = ['person', 'device']
+        fields = ['person']
 
 
 # class AssignDevice(django_filters.FilterSet):
